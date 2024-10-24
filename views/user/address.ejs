@@ -1,0 +1,736 @@
+<%- include ('../layout/header') %>
+    <div class="page-wrapper">
+        <header class="header header-6">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-left">
+                        <ul class="top-menu top-link-menu d-none d-md-block">
+                            <li>
+                                <a href="#">Links</a>
+                              
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-right">
+                       
+                        <ul class="top-menu top-link-menu">
+                            <li>
+                                <a href="#">Links</a>
+                                <ul>
+                                    
+                                   
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-left">
+                        <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <form id="searchForm" action="/search" method="get">
+                                <div class="header-search-wrapper search-wrapper-wide">
+                                    <label for="q" class="sr-only">Search</label>
+                                    <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search product ..." value="">
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                    <div class="header-center">
+                        <a href="index.html" class="logo">
+                        
+
+                            <h3>Roshow</h3>
+                        </a>
+                    </div>
+
+                    <div class="header-right">
+                        <a href="wishlist.html" class="wishlist-link">
+                            <i class="icon-heart-o"></i>
+                            <!-- <span class="wishlist-count">3</span> -->
+                            <span class="wishlist-txt"></span>
+                        </a>
+
+                        <!-- jQuery first, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                        <div>
+                            <a href="/cart" role="button">
+                                <i class="icon-shopping-cart" style="font-size: 34px;"></i>
+                              </a>
+                          
+                        </div>
+                        <div class="dropdown cart-dropdown">
+                            <!-- <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <i class="icon-shopping-cart"></i>
+                                -->
+                            <div>
+                                     
+                               
+                            </div>
+
+                        </div><!-- End .cart-dropdown -->
+                    </div>
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
+
+            <div class="header-bottom sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+                                <li class="megamenu-container active">
+                                    <a href="index.html" class="sf-with-ul">Home</a>
+
+                                </li>
+                                <li>
+                                    <a href="/shop" class="sf-with-ul">Shop</a>
+
+
+                                    <div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-8">
+                                              
+                                            </div><!-- End .col-md-8 -->
+
+                                           
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>
+                             
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right">
+                        <i class="la la-lightbulb-o"></i><p>Clearance Up to 30% Off</span></p>
+                    </div>
+                </div><!-- End .container -->
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
+
+        <main class="main">
+        	<div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
+        		<div class="container">
+        			<h1 class="page-title">My Account<span>Address</span></h1>
+        		</div><!-- End .container -->
+        	</div><!-- End .page-header -->
+            <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/shop">Shop</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">My Account</li>
+                    </ol>
+                </div><!-- End .container -->
+            </nav><!-- End .breadcrumb-nav -->
+
+            <div class="page-content">
+            	<div class="dashboard">
+	                <div class="container">
+	                	<div class="row">
+                            <aside class="col-md-4 col-lg-3">
+                                <ul class="nav nav-dashboard flex-column mb-3 mb-md-0" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-account-link" href="/profile" role="tab" aria-controls="tab-account" aria-selected="false">Account Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-orders-link" href="/orders" role="tab" aria-controls="tab-orders" aria-selected="false">Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-address-link" href="/wallet" role="tab" aria-controls="tab-address" aria-selected="false">Wallet</a>
+                                      </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-address-link" href="/address" role="tab" aria-controls="tab-address" aria-selected="false">Addresses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/logout">Sign Out</a>
+                                    </li>
+                                </ul>
+	                		</aside><!-- End .col-lg-3 -->
+
+	                		<div class="col-md-8 col-lg-9">
+                              
+                                        <title>Your Addresses</title>
+                                    
+<!--                                     
+                                        <div class="container my-4">
+                                            <div class="row">
+                                                <div class="col-lg-8 mx-auto">
+                                                    <div class="card card-dashboard"> -->
+                                                        <div class="card-body">
+                                                            <h1 class="mb-4">Your Addresses</h1>
+                                                            <a href="#" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addAddressModal">Add New Address</a>
+                                    
+                                                            <% if (addresses.length === 0) { %>
+                                                                <p>No addresses found. <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#addAddressModal">Add an address</a></p>
+                                                            <% } else { %>
+                                                                <form action="/address/set-default" method="POST">
+                                                                    <ul class="list-group">
+                                                                        <% addresses.forEach(function(address) { %>
+                                                                            <li class="list-group-item address-container">
+                                                                                <div class="address-info">
+                                                                                    <input type="radio" id="address_<%= address._id %>" name="defaultAddress" value="<%= address._id %>" <% if (address.isDefault) { %> checked <% } %> />
+                                                                                    <label for="address_<%= address._id %>" class="ml-2">
+                                                                                        <strong><%= address.fullName %></strong><br>
+                                                                                        <%= address.addressLine1 %>, <%= address.addressLine2 %>, <%= address.city %>, <%= address.state %>, <%= address.postalCode %>, <%= address.country %><br>
+                                                                                        Phone: <%= address.phoneNumber %>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#" class="btn-icon edit" data-toggle="modal" data-target="#editAddressModal_<%= address._id %>">
+                                                                                        <i class="fas fa-edit"></i>
+                                                                                    </a>
+                                                                                    <a href="/address/delete/<%= address._id %>" class="btn-icon delete">
+                                                                                        <i class="fas fa-trash"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </li>
+                                                                        <% }); %>
+                                                                    </ul>
+                                                                </form>
+                                                            <% } %>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Add Address Modal -->
+                                         <!-- Add Address Modal -->
+                                         <div class="modal fade" id="addAddressModal" tabindex="-1" role="dialog" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="addAddressModalLabel">Add New Address</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="addAddressForm" action="/address/add" method="POST">
+                                                            <div class="form-group">
+                                                                <label for="fullName">Full Name</label>
+                                                                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                                                                <small class="text-danger" id="fullNameError"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="addressLine1">Address Line 1</label>
+                                                                <input type="text" class="form-control" id="addressLine1" name="addressLine1" required>
+                                                                <small class="text-danger" id="addressLine1Error"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="addressLine2">Address Line 2</label>
+                                                                <input type="text" class="form-control" id="addressLine2" name="addressLine2">
+                                                                <small class="text-danger" id="addressLine2Error"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="city">City</label>
+                                                                <input type="text" class="form-control" id="city" name="city" required>
+                                                                <small class="text-danger" id="cityError"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="state">State</label>
+                                                                <input type="text" class="form-control" id="state" name="state" required>
+                                                                <small class="text-danger" id="stateError"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="postalCode">Postal Code</label>
+                                                                <input type="text" class="form-control" id="postalCode" name="postalCode" required>
+                                                                <small class="text-danger" id="postalCodeError"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="country">Country</label>
+                                                                <input type="text" class="form-control" id="country" name="country" required>
+                                                                <small class="text-danger" id="countryError"></small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="phoneNumber">Phone Number</label>
+                                                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                                                                <small class="text-danger" id="phoneNumberError"></small>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Add Address</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Edit Address Modal -->
+<% addresses.forEach(function(address) { %>
+    <div class="modal fade" id="editAddressModal_<%= address._id %>" tabindex="-1" role="dialog" aria-labelledby="editAddressModalLabel_<%= address._id %>" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editAddressModalLabel_<%= address._id %>">Edit Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editAddressForm_<%= address._id %>" class="editAddressForm" data-address-id="<%= address._id %>">
+                        <div class="form-group">
+                            <label for="editFullName_<%= address._id %>">Full Name</label>
+                            <input type="text" class="form-control" id="editFullName_<%= address._id %>" name="fullName" value="<%= address.fullName %>" required>
+                            <small class="text-danger" id="editFullNameError_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAddressLine1_<%= address._id %>">Address Line 1</label>
+                            <input type="text" class="form-control" id="editAddressLine1_<%= address._id %>" name="addressLine1" value="<%= address.addressLine1 %>" required>
+                            <small class="text-danger" id="editAddressLine1Error_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editAddressLine2_<%= address._id %>">Address Line 2</label>
+                            <input type="text" class="form-control" id="editAddressLine2_<%= address._id %>" name="addressLine2" value="<%= address.addressLine2 %>">
+                            <small class="text-danger" id="editAddressLine2Error_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editCity_<%= address._id %>">City</label>
+                            <input type="text" class="form-control" id="editCity_<%= address._id %>" name="city" value="<%= address.city %>" required>
+                            <small class="text-danger" id="editCityError_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editState_<%= address._id %>">State</label>
+                            <input type="text" class="form-control" id="editState_<%= address._id %>" name="state" value="<%= address.state %>" required>
+                            <small class="text-danger" id="editStateError_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editPostalCode_<%= address._id %>">Postal Code</label>
+                            <input type="text" class="form-control" id="editPostalCode_<%= address._id %>" name="postalCode" value="<%= address.postalCode %>" required>
+                            <small class="text-danger" id="editPostalCodeError_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editCountry_<%= address._id %>">Country</label>
+                            <input type="text" class="form-control" id="editCountry_<%= address._id %>" name="country" value="<%= address.country %>" required>
+                            <small class="text-danger" id="editCountryError_<%= address._id %>"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="editPhoneNumber_<%= address._id %>">Phone Number</label>
+                            <input type="tel" class="form-control" id="editPhoneNumber_<%= address._id %>" name="phoneNumber" value="<%= address.phoneNumber %>" required>
+                            <small class="text-danger" id="editPhoneNumberError_<%= address._id %>"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Address</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }); %>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+	                			
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+    $(document).ready(function() {
+        // Edit Address Form Validation and Submission
+        $('.editAddressForm').on('submit', function(event) {
+            event.preventDefault();
+            const form = $(this);
+            const addressId = form.data('address-id');
+    
+            // Validate form
+            function validateEditForm(form) {
+                let isValid = true;
+                
+                // Clear previous error messages
+                form.find('.text-danger').text('');
+                form.find('input').removeClass('is-invalid');
+                
+                // Validate full name
+                const fullName = form.find(`#editFullName_${addressId}`).val();
+                if (!/^[A-Za-z\s]+$/.test(fullName)) {
+                    isValid = false;
+                    form.find(`#editFullName_${addressId}`).addClass('is-invalid');
+                    form.find(`#editFullNameError_${addressId}`).text('Please enter a valid full name (numbers is not allowed).');
+                    
+                }
+    
+                // Validate address line 1
+                if (form.find(`#editAddressLine1_${addressId}`).val().trim() === '') {
+                    isValid = false;
+                    form.find(`#editAddressLine1_${addressId}`).addClass('is-invalid');
+                    form.find(`#editAddressLine1Error_${addressId}`).text('Address Line 1 is required.');
+                }
+    
+                // Validate city
+                if (form.find(`#editCity_${addressId}`).val().trim() === '') {
+                    isValid = false;
+                    form.find(`#editCity_${addressId}`).addClass('is-invalid');
+                    form.find(`#editCityError_${addressId}`).text('City is required.');
+                }
+    
+                // Validate state
+                const state = form.find(`#editState_${addressId}`).val();
+                if (!/^[A-Za-z\s]+$/.test(state)) {
+                    isValid = false;
+                    form.find(`#editState_${addressId}`).addClass('is-invalid');
+                    form.find(`#editStateError_${addressId}`).text('Please enter a valid state (letters and spaces only).');
+                }
+    
+                // Validate postal code
+                const postalCode = form.find(`#editPostalCode_${addressId}`).val();
+                if (!/^\d{6}(-\d{6})?$/.test(postalCode)) {
+                    isValid = false;
+                    form.find(`#editPostalCode_${addressId}`).addClass('is-invalid');
+                    form.find(`#editPostalCodeError_${addressId}`).text('Postal code must be 6 digits.');
+                }
+    
+                // Validate country
+                const country = form.find(`#editCountry_${addressId}`).val();
+                if (!/^[A-Za-z\s]+$/.test(country)) {
+                    isValid = false;
+                    form.find(`#editCountry_${addressId}`).addClass('is-invalid');
+                    form.find(`#editCountryError_${addressId}`).text('Please enter a valid country (letters and spaces only).');
+                }
+    
+                // Validate phone number
+                const phoneNumber = form.find(`#editPhoneNumber_${addressId}`).val();
+                if (!/^\d{10}$/.test(phoneNumber)) {
+                    isValid = false;
+                    form.find(`#editPhoneNumber_${addressId}`).addClass('is-invalid');
+                    form.find(`#editPhoneNumberError_${addressId}`).text('Phone number must be 10 digits.');
+                }
+    
+                return isValid;
+            }
+    
+            if (validateEditForm(form)) {
+                $.ajax({
+                    url: `/address/edit/${addressId}`,
+                    method: 'POST',
+                    data: form.serialize(),
+                    success: function(response) {
+                        if (response.success) {
+                            $(`#editAddressModal_${addressId}`).modal('hide');
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Address updated successfully',
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.reload();
+                                }
+                            });
+                        } else {
+                            Swal.fire({
+                                title: 'Error!',
+                                text: response.message || 'Failed to update address',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    },
+                    error: function() {
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Failed to update address. Please try again.',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: 'Validation Error',
+                    text: 'Please check all required fields and ensure they are filled correctly.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    });
+    </script>
+
+                                        
+                                        <script>
+                                            $(document).ready(function() {
+                                                // Function to validate form fields and display error messages
+                                                function validateForm(form) {
+                                                    let isValid = true;
+                                        
+                                                    // Clear previous error messages
+                                                    form.find('.text-danger').text('');
+                                                    form.find('input').removeClass('is-invalid');
+                                        
+                                                    // Validate each field and display error if needed
+                                                    if (!/^[A-Za-z\s]+$/.test($('#fullName').val())) {
+                                                        isValid = false;
+                                                        $('#fullName').addClass('is-invalid');
+                                                        $('#fullNameError').text('Please enter a valid full name (letters and spaces only).');
+                                                    }
+                                        
+                                                    if ($('#addressLine1').val().trim() === '') {
+                                                        isValid = false;
+                                                        $('#addressLine1').addClass('is-invalid');
+                                                        $('#addressLine1Error').text('Address Line 1 is required.');
+                                                    }
+                                        
+                                                    if ($('#city').val().trim() === '') {
+                                                        isValid = false;
+                                                        $('#city').addClass('is-invalid');
+                                                        $('#cityError').text('City is required.');
+                                                    }
+                                        
+                                                    if (!/^[A-Za-z\s]+$/.test($('#state').val())) {
+                                                        isValid = false;
+                                                        $('#state').addClass('is-invalid');
+                                                        $('#stateError').text('Please enter a valid state (letters and spaces only).');
+                                                    }
+                                        
+                                                    if (!/^\d{6}(-\d{6})?$/.test($('#postalCode').val())) {
+                                                        isValid = false;
+                                                        $('#postalCode').addClass('is-invalid');
+                                                        $('#postalCodeError').text('Postal code must be 6 digits.');
+                                                    }
+                                        
+                                                    if (!/^[A-Za-z\s]+$/.test($('#country').val())) {
+                                                        isValid = false;
+                                                        $('#country').addClass('is-invalid');
+                                                        $('#countryError').text('Please enter a valid country (letters and spaces only).');
+                                                    }
+                                        
+                                                    if (!/^\d{10}$/.test($('#phoneNumber').val())) {
+                                                        isValid = false;
+                                                        $('#phoneNumber').addClass('is-invalid');
+                                                        $('#phoneNumberError').text('Phone number must be 10 digits.');
+                                                    }
+                                        
+                                                    return isValid;
+                                                }
+                                        
+                                                // Add Address Form Submission
+                                                $('#addAddressForm').on('submit', function(event) {
+                                                    event.preventDefault();
+                                        
+                                                    if (validateForm($(this))) {
+                                                        $.ajax({
+                                                            url: $(this).attr('action'),
+                                                            method: 'POST',
+                                                            data: $(this).serialize(),
+                                                            success: function(response) {
+                                                                $('#addAddressModal').modal('hide');
+                                                                Swal.fire({
+                                                                    title: 'Success!',
+                                                                    text: 'Address added successfully',
+                                                                    icon: 'success',
+                                                                    confirmButtonText: 'OK'
+                                                                });
+                                                            },
+                                                            error: function() {
+                                                                Swal.fire({
+                                                                    title: 'Error!',
+                                                                    text: 'Failed to add address. Please try again.',
+                                                                    icon: 'error',
+                                                                    confirmButtonText: 'OK'
+                                                                });
+                                                            }
+                                                        });
+                                                    } else {
+                                                        Swal.fire({
+                                                            title: 'Validation Error',
+                                                            text: 'Please check all required fields and ensure they are filled correctly.',
+                                                            icon: 'error',
+                                                            confirmButtonText: 'OK'
+                                                        });
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                        
+
+
+
+								  
+								    </div><!-- .End .tab-pane -->
+								</div>
+	                		</div><!-- End .col-lg-9 -->
+	                	</div><!-- End .row -->
+	                </div><!-- End .container -->
+                </div><!-- End .dashboard -->
+            </div><!-- End .page-content -->
+        </main><!-- End .main -->
+
+    
+    </div><!-- End .page-wrapper -->
+    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+            <form action="#" method="get" class="mobile-search">
+                <label for="mobile-search" class="sr-only">Search</label>
+                <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required>
+                <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+            </form>
+            
+            <nav class="mobile-nav">
+                <ul class="mobile-menu">
+                    <li class="active">
+                        <a href="/home">Home</a>
+
+                       
+                    </li>
+                    <li>
+                        <a href="/shop">Shop</a>
+                       
+                    </li>
+                 
+                    </li>
+                    
+                </ul>
+            </nav><!-- End .mobile-nav -->
+
+            <div class="social-icons">
+                <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
+            </div><!-- End .social-icons -->
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+
+    <!-- Sign in / Register Modal -->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="icon-close"></i></span>
+                    </button>
+
+                    <div class="form-box">
+                        <div class="form-tab">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="tab-content-5">
+                                <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="singin-email">Username or email address *</label>
+                                            <input type="text" class="form-control" id="singin-email" name="singin-email" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-group">
+                                            <label for="singin-password">Password *</label>
+                                            <input type="password" class="form-control" id="singin-password" name="singin-password" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-footer">
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>LOG IN</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </button>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="signin-remember">
+                                                <label class="custom-control-label" for="signin-remember">Remember Me</label>
+                                            </div><!-- End .custom-checkbox -->
+
+                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
+                                        </div><!-- End .form-footer -->
+                                    </form>
+                                    <div class="form-choice">
+                                        <p class="text-center">or sign in with</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-g">
+                                                    <i class="icon-google"></i>
+                                                    Login With Google
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-f">
+                                                    <i class="icon-facebook-f"></i>
+                                                    Login With Facebook
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .form-choice -->
+                                </div><!-- .End .tab-pane -->
+                                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="register-email">Your email address *</label>
+                                            <input type="email" class="form-control" id="register-email" name="register-email" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-group">
+                                            <label for="register-password">Password *</label>
+                                            <input type="password" class="form-control" id="register-password" name="register-password" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-footer">
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>SIGN UP</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </button>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="register-policy" required>
+                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a> *</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .form-footer -->
+                                    </form>
+                                    <div class="form-choice">
+                                        <p class="text-center">or sign in with</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-g">
+                                                    <i class="icon-google"></i>
+                                                    Login With Google
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login  btn-f">
+                                                    <i class="icon-facebook-f"></i>
+                                                    Login With Facebook
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .form-choice -->
+                                </div><!-- .End .tab-pane -->
+                            </div><!-- End .tab-content -->
+                        </div><!-- End .form-tab -->
+                    </div><!-- End .form-box -->
+                </div><!-- End .modal-body -->
+            </div><!-- End .modal-content -->
+        </div><!-- End .modal-dialog -->
+    </div><!-- End .modal -->
+
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- molla/dashboard.html  22 Nov 2019 10:03:13 GMT -->
+</html>

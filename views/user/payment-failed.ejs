@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-times-circle text-danger" style="font-size: 64px;"></i>
+                        <h2 class="mt-3 mb-4">Payment Failed!</h2>
+                        <p class="text-muted">Your payment was not completed successfully. The order has been cancelled.</p>
+                        <% if (orderDetails) { %>
+                            <div class="order-details mt-3">
+                                <p><strong>Order ID:</strong> <%= orderDetails.order_id %></p>
+                                <p><strong>Total Amount:</strong> ₹<%= orderDetails.total_amount.toFixed(2) %></p>
+                            </div>
+                        <% } %>
+                        <div class="mt-4">
+                            <a href="/viewOrder/<%= orderId %>" class="btn btn-primary">View Order Details</a>
+                            <a href="/checkout" class="btn btn-secondary ml-2">Try Again</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 120px;
+      margin: 0;
+      color: #ff6b6b;
+      position: relative;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Magnifying glass animation */
+    .magnifier {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      background: transparent;
+      border: 8px solid #333;
+      border-radius: 50%;
+      animation: rotate 4s infinite linear;
+    }
+
+    .magnifier:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 8px;
+      background: #333;
+      top: 50px;
+      left: 58px;
+      transform: rotate(45deg);
+    }
+
+    .glass {
+      width: 80px;
+      height: 80px;
+      border: 4px solid #ff6b6b;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Animations */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="magnifier">
+      <div class="glass"></div>
+    </div>
+    <h1>404</h1>
+    <h2>Oops! Page not found</h2>
+    <p>It looks like nothing was found at this location. You might want to head back to the homepage.</p>
+    <a href="/admin/dashboard">Go to Dashboard</a>
+  </div>
+</body>
+</html>
